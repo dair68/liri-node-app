@@ -1,4 +1,4 @@
-require("./.gitignore/node_modules/dotenv").config({path:".gitignore/.env"});
+require("dotenv").config(".env");
 
 var keys = require("./keys.js");
 //console.log(keys);
