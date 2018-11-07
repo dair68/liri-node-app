@@ -25,16 +25,16 @@ your-spotify-id and your-spotify-secret are of course the **Client ID** and **Cl
 
 
 ###Using liri
-**Searching up a band:
+**Searching up a band**:
 *Type in `node liri.js concert-this name_of_band` into the command line to obtain a list of upcoming concerts for a band, with lists of venues, countries, and dates.
 
-**Searching up a song:
+**Searching up a song**:
 *Type in `node liri.js spotify-this-song "song_name"` into the command line to obtain spotify data on a certain song. Will output a list of best matching songs to the console, with stats on album, artist, and a preview link. Will default to showing "The Sign" by Ace of Base if no song title provided
 
-**Searching up a movie:
+**Searching up a movie**:
 *Type in `node liri.js movie-this "movie_name"` into the command line to obtain stats on particular movie, including year, actors, and a plot synopsis. Will default to showing stats for "Mr Nobody" if no movie name provided.
 
-**Executing a command from a .txt file:
+**Executing a command from a .txt file**:
 *Type in `node liri.js do-what-it-says` into the command line to execute the command specified in the random.txt file. First instance, if the random.txt says `spotify-this-song,"I Want it That Way"`, the app runs the `spotify-this-song` command on "I Want it That Way". In general, random.txt should contain the text
 
 `node_command, what_your_searching_for` 
