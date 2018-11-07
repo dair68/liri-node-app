@@ -1,7 +1,16 @@
 require("dotenv").config(".env");
 
 var command = process.argv[2];
-var query = process.argv.slice(3).join(" ");
+var query;
+
+//4th command line argument provided
+if (process.argv.length > 3) {
+    query = process.argv.slice(3).join(" ");
+}
+else {
+    query = undefined;
+}
+
 var request = require("request");
 
 //command for executing the command in random.txt
@@ -31,7 +40,7 @@ else {
 
 //takes in a command and query, and executes appropriate function to fetch data
 function search(command, query) {
-    if(command === "concert-this") {
+    if (command === "concert-this") {
         searchBand(query);
     }
     //song search
@@ -45,7 +54,7 @@ function search(command, query) {
     //movie search
     else if (command === "movie-this") {
         //no movie provided. defaulting to "Mr Nobody"
-        if(query === undefined) {
+        if (query === undefined) {
             query = "Mr Nobody";
         }
         searchMovie(query);
